@@ -5,29 +5,6 @@ import java.util.Scanner;
 import java.io.InputStream;
 import java.util.Properties;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 public class Main {
 
     private static Properties loadConfig() {
@@ -51,9 +28,9 @@ public class Main {
         String username = config.getProperty("db.username");
         String password = config.getProperty("db.password");
 
-        try{
+        try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-        }catch (ClassNotFoundException e) {
+        } catch (ClassNotFoundException e) {
             throw new RuntimeException(e.getException());
         }
 
@@ -206,21 +183,6 @@ public class Main {
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     private static void updateStudent(Connection connection, Scanner sc) {
         try {
             System.out.print("Enter Student ID to update: ");
@@ -360,3 +322,4 @@ public class Main {
             return false;
         }
     }
+}
