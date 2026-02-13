@@ -5,6 +5,29 @@ import java.util.Scanner;
 import java.io.InputStream;
 import java.util.Properties;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 public class Main {
 
     private static Properties loadConfig() {
@@ -183,6 +206,21 @@ public class Main {
         }
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     private static void updateStudent(Connection connection, Scanner sc) {
         try {
             System.out.print("Enter Student ID to update: ");
@@ -321,5 +359,4 @@ public class Main {
             System.err.println("Error checking student existence: " + e.getMessage());
             return false;
         }
-    }
     }
